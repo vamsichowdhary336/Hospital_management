@@ -13,7 +13,7 @@ public class CorsConfig {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowedOrigins("https://warm-tapioca-f3d47a.netlify.app/")
+				registry.addMapping("/**").allowedOrigins("https://warm-tapioca-f3d47a.netlify.app")
 						.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS").allowedHeaders("*")
 						.allowCredentials(true);
 			}
